@@ -10,113 +10,107 @@
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f3ece4, #e8dccb, #f5efe6);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #efe6d8, #f7f1e8);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #3a3a3a;
+}
+
+.card {
+  background: #f9f5ee;
+  padding: 60px 50px;
+  border-radius: 28px;
+  max-width: 650px;
+  width: 90%;
   text-align: center;
-  padding: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
 }
 
-.container {
-  background: #efe6d8;
-  padding: 55px 45px;
-  border-radius: 25px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
-  max-width: 550px;
-  width: 100%;
-}
-
-.profile-pic {
-  width: 140px;
-  height: 140px;
+.profile {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 25px;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
 h1 {
-  margin-bottom: 8px;
-  font-size: 26px;
+  margin: 10px 0 8px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
 }
 
 .subtitle {
-  color: #6b6b6b;
-  margin-bottom: 25px;
+  color: #7a746c;
   font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .about {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5e5851;
+  margin-bottom: 35px;
 }
 
 .icons a {
-  margin: 0 15px;
-  font-size: 24px;
+  font-size: 22px;
+  margin: 0 14px;
   color: #7a6f5c;
   transition: 0.3s ease;
 }
 
 .icons a:hover {
   color: #b49a7c;
-  transform: scale(1.2);
+  transform: translateY(-4px);
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <img src="profile.jpg" class="profile-pic" alt="Profile Photo">
-  
+<div class="card">
+  <img src="profile.jpg" alt="Abirami Profile Photo" class="profile">
+
   <h1>Abirami U. Sanjeevan</h1>
-  <p class="subtitle">
+
+  <div class="subtitle">
     Applied Software Engineering • Cybersecurity Minor<br>
     Winthrop University | Class of 2026
-  </p>
+  </div>
 
   <div class="about">
-  I am a Software Engineering student with a Cybersecurity minor and
-  hands-on experience in AWS cloud environments and Linux system administration.
-  As a Student System Administrator in the Winthrop Cyber Lab, I work with
-  Raspberry Pi clusters, configure NFS cross-mount file systems, and manage
-  secure Linux-based environments.
+    I am an Applied Software Engineering major with a Cybersecurity minor
+  at <strong>Winthrop University (Class of 2026)</strong>. My academic training
+  and hands-on technical experience focus on secure cloud infrastructure,
+  Linux system administration, and backend validation.
 
-  I have experience performing QA testing, API validation using Postman,
-  backend data verification with SQL, and implementing role-based access control.
-  My interests focus on secure cloud infrastructure, digital forensics,
-  and building reliable backend systems.
+  In the Winthrop Cyber Lab, I configure and manage Raspberry Pi clusters,
+  implement NFS cross mount architectures, and support AWS Linux environments.
+  My responsibilities include system log analysis, access control validation,
+  and maintaining reliable lab infrastructure.
+
+  I have also performed structured QA testing, designed and executed
+  test cases, conducted API validation using Postman, and performed
+  backend data integrity checks using SQL and MySQL.
+
+  I am driven by a passion for secure systems, cloud technologies,
+  and scalable backend engineering, and I aim to contribute to
+  organizations that value reliability, security, and innovation.
 
   </div>
 
   <div class="icons">
-    <a href="Abirami_Sanjeevan_Resume.pdf" target="_blank" title="Resume">
-      <i class="fa-solid fa-file"></i>
-    </a>
-
-    <a href="https://github.com/abisanjeevan2-tech" target="_blank" title="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="mailto:abisanjeevan2@gmail.com" title="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-
-    <a href="https://www.instagram.com/abi_sanjay30/" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <a href="Abirami_Sanjeevan_Resume.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>
+    <a href="https://github.com/abisanjeevan2-tech" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:abisanjeevan2@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.instagram.com/abi_sanjay30/" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
+
 </div>
 
 </body>
