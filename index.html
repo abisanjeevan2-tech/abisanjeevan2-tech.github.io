@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abirami Sanjeevan</title>
+<title>Abirami U. Sanjeevan</title>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
@@ -16,15 +16,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .card {
   background: #f9f5ee;
   padding: 60px 50px;
   border-radius: 30px;
-  max-width: 650px;
-  width: 90%;
+  max-width: 750px;
+  width: 100%;
   text-align: center;
   box-shadow: 0 30px 60px rgba(0,0,0,0.08);
 }
@@ -34,36 +34,56 @@ body {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 35px;
-  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+  margin-bottom: 30px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 h1 {
-  margin: 10px 0 8px;
-  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   color: #7a746c;
-  font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .about {
-  font-size: 14px;
   line-height: 1.8;
   color: #5e5851;
   margin-bottom: 35px;
 }
 
+.icons {
+  margin-bottom: 40px;
+}
+
 .icons a {
-  font-size: 22px;
-  margin: 0 14px;
+  font-size: 24px;
+  margin: 0 16px;
   transition: 0.3s ease;
 }
 
 .icons a:hover {
   transform: translateY(-4px);
+}
+
+.projects {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  margin-bottom: 18px;
 }
 </style>
 </head>
@@ -72,8 +92,7 @@ h1 {
 
 <div class="card">
 
-  <!-- PROFILE PHOTO -->
-  <img src="./profile.JPG" alt="Profile Photo" class="profile">
+  <img src="profile.jpg" alt="Profile Photo" class="profile">
 
   <h1>Abirami U. Sanjeevan</h1>
 
@@ -82,47 +101,65 @@ h1 {
     Winthrop University | Class of 2026
   </div>
 
+  <div class="about-title">Professional Summary</div>
+
   <div class="about">
-
-  <strong>Professional Summary</strong><br><br>
-  I am an Applied Software Engineering student at Winthrop University pursuing a Cybersecurity minor, with a strong academic foundation and hands-on
-  experience in secure systems and cloud environments.
-
-  As a Student System Administrator in the Winthrop Cyber Lab, I work with Raspberry Pi clusters, configure NFS cross mount file systems, and manage
-  Linux-based environments within AWS cloud infrastructure. My experience includes system monitoring, log analysis, role based access control (RBAC),
-  and maintaining secure development environments. Also, I have practical experience in QA testing, API validation using
-  Postman, backend data verification with SQL/MySQL, and documenting testing workflows. I am particularly interested in cloud security, digital forensics,
-  and building scalable backend systems that follow secure engineering principles.
-
-  My goal is to combine software engineering and cybersecurity to design reliable, secure, and performance driven systems.
-</div>
+    I am an Applied Software Engineering student at Winthrop University with a
+    strong focus in Cybersecurity. As a Student System Administrator in the
+    Winthrop Cyber Lab, I work with Raspberry Pi clusters, configure NFS
+    cross-mount file systems, and manage secure AWS Linux environments.
+    I perform QA testing, API validation using Postman, and backend
+    data verification with SQL. I am passionate about building secure,
+    scalable cloud and backend systems.
   </div>
 
+  <!-- ICONS MOVED HERE -->
   <div class="icons">
-    <!-- Resume -->
-    <a href="./ABIRAMI SANJEEVAN Resume.pdf" target="_blank" style="color:#6c757d;">
+    <a href="ABIRAMI SANJEEVAN Resume.pdf" target="_blank" style="color:#6c757d;">
       <i class="fa-solid fa-file"></i>
     </a>
 
-    <!-- GitHub -->
     <a href="https://github.com/abisanjeevan2-tech" target="_blank" style="color:#000000;">
       <i class="fab fa-github"></i>
     </a>
 
-    <!-- LinkedIn -->
     <a href="https://www.linkedin.com/" target="_blank" style="color:#0A66C2;">
       <i class="fab fa-linkedin"></i>
     </a>
 
-    <!-- Email -->
     <a href="mailto:abisanjeevan2@gmail.com" style="color:#D44638;">
       <i class="fa-solid fa-envelope"></i>
     </a>
 
-    <!-- Instagram -->
     <a href="https://www.instagram.com/abi_sanjay30/" target="_blank" style="color:#E1306C;">
       <i class="fab fa-instagram"></i>
     </a>
+  </div>
+
+  <!-- PROJECT SECTION -->
+  <div class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+      <strong>Raspberry Pi Cluster & NFS Configuration</strong><br>
+      Configured and managed cross-mounted Linux environments within the Winthrop Cyber Lab.
+    </div>
+
+    <div class="project-item">
+      <strong>AWS Linux Cloud Environment</strong><br>
+      Deployed and managed EC2 instances, configured IAM roles, and monitored system logs.
+    </div>
+
+    <div class="project-item">
+      <strong>Banner Access Tracker</strong><br>
+      Designed a Python + MySQL system for structured access request management.
+    </div>
+
+    <div class="project-item">
+      <strong>VPN Security Research</strong><br>
+      Conducted research on VPN encryption, tunneling protocols, and security limitations.
+    </div>
+
   </div>
 
 </div>
