@@ -3,80 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abirami U. Sanjeevan | Portfolio</title>
+<title>Abirami U. Sanjeevan</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #fdf1f7, #f3f0ff, #f5fbff);
-  color: #2e2e2e;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f3ece4, #e8dccb, #f5efe6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #3a3a3a;
+  text-align: center;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 40px;
+  background: #efe6d8;
+  padding: 55px 45px;
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  max-width: 500px;
+  width: 90%;
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 h1 {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 26px;
 }
 
 .subtitle {
-  color: #666;
+  color: #6b6b6b;
+  margin-bottom: 35px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-.section {
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  margin-bottom: 25px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+.icons a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: #7a6f5c;
+  transition: 0.3s ease;
 }
 
-h2 {
-  margin-top: 0;
-}
-
-button {
-  padding: 10px 18px;
-  border-radius: 8px;
-  border: none;
-  background: #c8b6ff;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #b197fc;
-}
-
-a {
-  text-decoration: none;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #888;
-  font-size: 14px;
+.icons a:hover {
+  color: #b49a7c;
+  transform: scale(1.2);
 }
 </style>
 </head>
@@ -84,65 +67,35 @@ a {
 <body>
 
 <div class="container">
+  <img src="profile.jpg" class="profile-pic" alt="Profile Photo">
+  
+  <h1>Abirami U. Sanjeevan</h1>
+  <p class="subtitle">
+    Applied Software Engineering<br>
+    Cybersecurity Minor • Winthrop University
+  </p>
 
-  <div class="header">
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>Abirami U. Sanjeevan</h1>
-    <p class="subtitle">
-      Applied Software Engineering | Cybersecurity Minor<br>
-      Winthrop University | Class of 2026
-    </p>
-    <br>
-    <a href="Abirami_Sanjeevan_Resume.pdf" target="_blank">
-      <button>Download Resume</button>
+  <div class="icons">
+    <a href="Abirami_Sanjeevan_Resume.pdf" target="_blank" title="Resume">
+      <i class="fa-solid fa-file"></i>
+    </a>
+
+    <a href="https://github.com/abisanjeevan2-tech" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:abisanjeevan2@gmail.com" title="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.instagram.com/abi_sanjay30/" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
     </a>
   </div>
-
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a motivated Software Engineering student with a Cybersecurity minor.
-      I have hands-on experience in QA testing, Linux system administration,
-      AWS cloud technologies, and backend validation using SQL.
-      I am passionate about building secure, reliable systems.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Linux Administration</li>
-      <li>AWS (EC2, S3, IAM, Lambda)</li>
-      <li>Cyber Forensic Evidence Collection</li>
-      <li>VPN Security Research</li>
-      <li>Postman API Testing</li>
-      <li>SQL & MySQL</li>
-      <li>Python, Java, C++</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>Banner Access Tracker – Python & MySQL system</li>
-      <li>Cyber Evidence Collection (Academic)</li>
-      <li>VPN Security Research</li>
-      <li>AWS Cloud Computing Projects</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: abisanjeevan2@gmail.com</p>
-    <p>
-      <a href="https://github.com/abisanjeevan2-tech" target="_blank">GitHub</a>
-    </p>
-  </div>
-
-  <div class="footer">
-    © 2026 Abirami U. Sanjeevan
-  </div>
-
 </div>
 
 </body>
