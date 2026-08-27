@@ -11,36 +11,21 @@
 
 *{box-sizing:border-box}
 body{
+
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 800px at 10% 10%, rgba(106,166,255,.18), transparent 45%),
-              radial-gradient(900px 700px at 90% 20%, rgba(124,240,200,.14), transparent 45%),
-              var(--bg);
+
+  background:
+    linear-gradient(rgba(11,18,32,.55), rgba(11,18,32,.55)),
+    url("background.png");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
   color:var(--text);
-}
 
-.container{max-width:980px;margin:0 auto;padding:22px 16px}
-
-.site-header{
-  border-bottom:1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255,255,255,.04), transparent);
-}
-
-.header-grid{
-  display:flex;
-  gap:18px;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-
-.identity{display:flex;gap:14px;align-items:center}
-.avatar{
-  width:78px;height:78px;border-radius:18px;
-  object-fit:cover;
-  border:1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(0,0,0,.35);
-  background:rgba(255,255,255,.04);
 }
 
 h1{margin:0;font-size:28px;letter-spacing:.2px}
